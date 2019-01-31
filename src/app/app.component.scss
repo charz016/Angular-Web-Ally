@@ -1,9 +1,11 @@
 @import '../variables.scss';
 
 .section-1{
-min-height: 100vh;
+height: 100vh;
 background: linear-gradient(to right,$purple 0,$blue 100%),url('/assets/img/allyB.jpg');
 background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 
     &__square{
         position: relative;
@@ -53,6 +55,10 @@ background-position: center;
             cursor: pointer;
         }
     }
+}
+
+.section-2{
+    
 }
 
 @keyframes bounce {
