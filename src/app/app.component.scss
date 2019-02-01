@@ -58,7 +58,468 @@ background-repeat: no-repeat;
 }
 
 .section-2{
+min-height: 60vh;
+padding: 20px;
+
+    &__container{
+        max-width: 800px;
+        text-align: center;
+        &-title{
+            font-size: 3rem;
+        }
+
+        &-subtitle{
+            font-weight: bold;
+            margin: 10px;
+            position: relative;
+            
+            
+           &::before{
+            content: "";
+            background: black;
+            height: 2px;
+            width: 90px;
+            position: absolute;
+            bottom: 50%;
+            left: -95px;
+        }
+
+        &::after{
+            content: "";
+            background: black;
+            height: 2px;
+            width: 90px;
+            position: absolute;
+            bottom: 50%;
+            right: -95px;
+        }
+
+        }
+
+        &-text{
+        
+        }
+
+        &-button{
+            margin: 20px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 15px 35px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 500ms ease;
+            
+            &:hover {
+              box-shadow: 0 -4em 0 0 steelblue inset;
+              color: white;
+            }
+        }
+
+    }    
+
+}
+
+.section-3{
+min-height: 100vh;
+background: linear-gradient(to right,$purple 0,$blue 100%),url('/assets/img/allyB2.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+&__wrap{
+    &__card{
+        height: 220px;
+        width: 320px;
+        margin: 20px 25px; 
+        box-shadow: 1px 1px 2px 1px #888888;
+        background: white;
+        border-color: black;
+
+        &__container{
+            text-align: center;
+            width: 250px;
+            height: 200px;
+
+            &__circle{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background:black;
+                color:white;
+                
+                &-icon{
+                    font-size: 35px;
+                }
+            }
+
+            &-title{
+                margin: 10px;
+                font-weight: bold;
+            }
+            
+            &-text{
+                text-align: center;
+            }
+        }
+    }
+}
+
+}
+
+.section-4{
+    min-height: 60vh;
+    padding: 20px;
+    &__img{
+        height: 60vh;
+        background-image: url('/assets/img/allyB3.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 550px;
+    }
+
+    &__img-xs{
+        background-size: 350px;
+    }
+
+    &__info{
+        height: 60vh;
+        &__container{
+            max-width: 450px;
+            margin: 0 auto;
+        &-title{
+           font-size: 2.5rem;
+           font-weight: normal;
+           position: relative;
+
+           &::before{
+            content: "";
+            background: black;
+            height: 2px;
+            width: 110px;
+            position: absolute;
+            bottom: 2%;
+            left: 5px;
+        }
+
+        }
+        
+        &-text{
+            margin: 20px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+        }
+
+        &-button{
+            margin: 20px 0;
+            background-color: white;
+            border: 1px solid black;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 500ms ease;
+            
+            &:hover {
+              box-shadow: 0 -4em 0 0 steelblue inset;
+              color: white;
+            }
+        }
+    }
+    }
+}
+
+.section-5{
+    min-height: 220px;
+    background: black;
+    color: white;
+    &__wrap{
+         &__container{
+            width: 250px;
+           height: 120px;
+           margin: 20px;
+           position: relative;
+            &-number{
+                font-size: 3.5rem;
+            }
     
+            &-text{
+                margin: 10px 0;
+                font-weight: bold;
+
+                &::before{
+                    content: "";
+                    background: white;
+                    height: 1px;
+                    width: 55px;
+                    position: absolute;
+                   top: 70px;
+                   right: 100px;
+                   
+                }
+            }
+        }
+    }
+}
+
+.section-6{
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+
+    &__title{
+        font-weight: normal;
+        margin: 40px 0;
+        font-size: 3rem;
+        position: relative;
+        
+       &::before{
+        content: "";
+        background: black;
+        height: 1px;
+        width: 80px;
+        position: absolute;
+        bottom: 50%;
+        left: -85px;
+    }
+
+    &::after{
+        content: "";
+        background: black;
+        height: 1px;
+        width: 80px;
+        position: absolute;
+        bottom: 50%;
+        right: -85px;
+    }
+}
+
+    &__wrap{
+        &__card{
+            height: 380px;
+            width: 300px;
+            margin: 10px;
+            box-shadow: 1px 1px 1px 1px #888888;        
+        &__container{
+            width: 260px;
+            height: 250px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+             &-icon{
+                font-size: 2rem;
+            }
+            &-title{
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+            &-text{
+
+            }
+        }
+
+        &:nth-child(1){
+            background: linear-gradient(to right,$purple 0,$blue 100%),url('/assets/img/allyPH.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(2){
+            background: linear-gradient(to right,$purple 0,$blue 100%),url('/assets/img/allyDS.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(3){
+            background: linear-gradient(to right,$purple 0,$blue 100%),url('/assets/img/allyPL.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        }
+        
+    }
+
+}
+
+.section-7{
+    min-height: 100vh;
+    background: $gray;
+
+    &__title{
+        font-weight: normal;
+        margin: 40px 0;
+        font-size: 3rem;
+        position: relative;
+        
+       &::before{
+        content: "";
+        background: black;
+        height: 1px;
+        width: 80px;
+        position: absolute;
+        bottom: 50%;
+        left: -85px;
+    }
+
+    &::after{
+        content: "";
+        background: black;
+        height: 1px;
+        width: 80px;
+        position: absolute;
+        bottom: 50%;
+        right: -85px;
+    }
+}
+
+    &__container-1{
+        align-items: flex-end;
+        justify-content: center;
+        &__content{
+            width: 300px;
+            margin:  40px 0px;
+            &-check{
+                background: black;
+                color: white;
+                border: 2px solid;
+                height: 60px; 
+                min-width: 60px; 
+                border-radius: 50%;
+                margin: 0 22px;
+            }
+            
+            &__info{
+                &-title{
+                    font-weight: bold;
+                    text-align: right;
+                }
+
+                &-title-md{
+                    font-weight: bold;
+                    text-align: start;
+                }
+            }
+
+            &__info-md{
+                order: 2;
+            }
+        }
+
+      
+    }
+
+    &__container-1-md{
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__container-2{
+        height: 100vh;
+        background-image: url('/assets/img/phone.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 270px 550px;
+      
+        &__img{
+            background: linear-gradient(to right,$blue 0,$purple 100%),url('/assets/img/allyB2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 258px 450px;
+            height: 100vh;
+
+            &__square{
+                position: relative;
+                width: 150px;
+                height: 100px;
+                color: white;
+                border: 2px solid white;
+                border-bottom: 0;
+                
+                &-title{
+                    font-size: 2rem;
+                    letter-spacing: 6px; 
+                }
+
+                &-text{
+                    position: absolute;
+                    top: 100%;
+                    left: 75%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 100%;
+                    font-size: .9rem;
+        
+                    &::before{
+                        content: "";
+                        background: white;
+                        height: 2px;
+                        width: 35px;
+                        position: absolute;
+                        bottom: 50%;
+                        left: -40px;
+                    }
+        
+                    &::after{
+                        content: "";
+                        background: white;
+                        height: 2px;
+                        width: 35px;
+                        position: absolute;
+                        bottom: 50%;
+                        right: 38px;
+                    }
+                }
+
+                &-arrow{
+                    animation: bounce 2s infinite;
+                    position: absolute;
+                    bottom: -140px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    &__container-3{
+        align-items: flex-start;
+        justify-content: center;
+        &__content{
+            width: 300px;
+            margin:  40px 0px;
+
+            &-check{
+                background: black;
+                color: white;
+                border: 2px solid;
+                height: 60px; 
+                min-width: 60px; 
+                border-radius: 50%;
+                margin: 0 10px;
+            }
+
+            &__info{
+                &-title{
+                    font-weight: bold;
+                    
+                }
+            }
+        
+
+        }
+    }
+
+    &__container-3-md{
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 @keyframes bounce {
